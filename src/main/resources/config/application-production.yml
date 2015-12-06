@@ -1,0 +1,10 @@
+logging:
+  file: logs/production.log
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/KotlinSpringBoot
+    username: root
+    password:
+

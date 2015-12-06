@@ -1,0 +1,14 @@
+logging:
+  file: logs/development.log
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type.descriptor.sql.BasicBinder: TRACE
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/KotlinSpringBoot
+    username: root
+    password:

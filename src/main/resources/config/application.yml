@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: development
+  jpa:
+    hibernate:
+      show-sql: true
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQLDialect
+  data:
+      jpa:
+        repositories:
+          enabled: true
+aws:
+  credentials:
+    accessKey: ${AWS_ACCESS_KEY}
+    secretKey: ${AWS_SECRET_KEY}
+  cognito:
+    developerProviderName: ${AWS_COGNIT_DPN}
+    identityPoolId: ${AWS_COGNIT_IPI}
+  ses:
+    from: ${AWS_SES_FROM_ADDRESS}
+
+#  social:
+#    facebook:
+#      app-id:
+#      app-secret:
+#    linkedin:
+#      app-id:
+#      app-secret:
+#    twitter:
+#      app-id:
+#      app-secret:

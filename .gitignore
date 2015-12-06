@@ -1,0 +1,34 @@
+logs/
+
+# Gradle
+#---------------------------
+.gradle/
+!gradle-wrapper.jar
+target
+out
+build
+bin
+
+# Eclipse
+#---------------------------
+.project
+.classpath
+.settings
+
+# IntelliJ
+#---------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS
+#---------------------------
+Thumbs.db
+.DS_Store
+
+# Other
+#---------------------------
+*.log
+*.swp
+*.bak

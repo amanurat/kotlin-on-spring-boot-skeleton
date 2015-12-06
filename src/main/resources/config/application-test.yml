@@ -1,0 +1,13 @@
+logging:
+  file: logs/test.log
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/KotlinSpringBootTest
+    username: root
+    password:
+  jpa:
+    hibernate:
+      show-sql: false
+      ddl-auto: create-drop
